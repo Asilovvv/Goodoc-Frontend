@@ -1,0 +1,24 @@
+.form{
+    background-color: rgb(77, 130, 216);
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form2{
+    background-color: #77acf0;
+}
+.form3{
+    display: flex;
+}
+.formLogin{
+    background-color: rgb(77, 130, 216);
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+.formReg{
+    background-color: rgb(77, 130, 216);
+    color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+}
