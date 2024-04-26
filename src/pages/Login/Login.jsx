@@ -39,34 +39,34 @@ const Login = () => {
             <form id="flex_container" className={classes.formR} onSubmit={handleSubmit(onSubmit)}>
                 <input
                     type="phone"
-                    placeholder="* Number"
+                    placeholder="Номер телефона"
                     {...register('number', {required: true})}
                     aria-invalid={errors.number ? 'true' : 'false'}
                     className={errors.mail && classes.errorInput}
                 />
-                {errors.mail?.type === 'required' && (
+                {errors.number?.type === 'required' && (
                     <p className={classes.error} role="alert">
-                        Username is required
+                        Поле не заполнено
                     </p>
                 )}
 
 
                 <input
                     type="Пароль"
-                    placeholder="* Password"
+                    placeholder="Пароль"
                     {...register('password', {required: true})}
                     aria-invalid={errors.password ? 'true' : 'false'}
                     className={errors.password && classes.errorInput}
                 />
                 {errors.password?.type === 'required' && (
                     <p role="alert" className={classes.error}>
-                        Passwords is required
+                        Поле не заполнено
                     </p>
                 )}
                 {/*<p>{errAlert}</p>*/}
-                <button type='submit' className={classes.submitButton}>Submit</button>
+                <button type='submit' className={classes.submitButton}>Продолжить</button>
             </form>
-            <p>fjjfjffj</p>
+                <button type='submit' className={classes.asGuest}>Войти как гость</button>
         </div>
     );
 };

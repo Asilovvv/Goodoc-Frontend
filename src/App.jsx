@@ -16,14 +16,7 @@ function App() {
         <Router/>
       </AuthProvider>
      {/* <div>hello world</div> */}
-     <img src={Time} alt="Time"/>
-     <img src={Logo} alt="Logo"/>
-     <img src={Med} alt="Med"/>
-     <Button variant="contained">Contained</Button>
-     <Button variant="contained">Contain</Button>
-     <Button variant="contained">Containssss</Button>
-     <Button variant="contained">Salam</Button>
-     <Button variant="contained">Aleikum</Button>
+    
     </>
   )
 

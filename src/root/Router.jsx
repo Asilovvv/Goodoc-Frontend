@@ -9,7 +9,7 @@ const Router = () => {
     console.log(isAuth)
 
     return (<>
-        <Header/>
+
         <Routes>
             {!isAuth?
                 <>
