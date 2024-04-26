@@ -22,15 +22,8 @@ const Header = () => {
                 </button>
             </NavLink>
             </>
+        
             :<>
-            <NavLink to={`/form`}>
-                    <button className={classes.form}>Form</button>
-            </NavLink>
-            <NavLink to ={"/purchase"}>
-                <button className={classes.form}>
-                    Purchase
-                </button>
-            </NavLink>
             </>}
             </div>
         </section> 
