@@ -1,10 +1,10 @@
 import classes from "./Login.module.css";
 import {useForm} from "react-hook-form";
-import {apiService} from '../../api/api.axios';
-import {useAuth} from '../../contexts/AuthContext';
+//import {apiService} from '../../api/api.axios';
+import {useAuth} from '../../context/AuthContext';
 import { useNavigate } from "react-router-dom";
 const Login = () => {
-formState
+
     const {
         register,
         formState: {errors},
@@ -38,7 +38,7 @@ formState
             <span className={classes.text_form}>Authentification</span>
             <form id="flex_container" className={classes.formR} onSubmit={handleSubmit(onSubmit)}>
                 <input
-                    type="Номер телефона"
+                    type="phone"
                     placeholder="* Number"
                     {...register('number', {required: true})}
                     aria-invalid={errors.number ? 'true' : 'false'}
@@ -66,6 +66,7 @@ formState
                 {/*<p>{errAlert}</p>*/}
                 <button type='submit' className={classes.submitButton}>Submit</button>
             </form>
+            <p>fjjfjffj</p>
         </div>
     );
 };

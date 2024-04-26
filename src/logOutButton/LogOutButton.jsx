@@ -1,4 +1,4 @@
-import {useAuth} from "../../contexts/AuthContext";
+import {useAuth} from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import classes from "./LogOutButton.module.css"
  const Button =()=>{

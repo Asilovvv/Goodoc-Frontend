@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
-import { useAuth } from "../../contexts/AuthContext";
-import Button from "../LogOutButton/LogOutButton";
+import { useAuth } from "../context/AuthContext";
+import Button from "../logOutButton/LogOutButton";
 const Header = () => {
     const {isAuth, setIsAuth}=useAuth()
     return(
