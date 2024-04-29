@@ -1,5 +1,8 @@
 import classes from "./Login.module.css";
 import {useForm} from "react-hook-form";
+import Google from "../../images/google copy.jpg"
+import Facebook from "../../images/facebook.jpg"
+import Apple from "../../images/apple.jpg"
 //import {apiService} from '../../api/api.axios';
 import {useAuth} from '../../context/AuthContext';
 import { useNavigate } from "react-router-dom";
@@ -32,11 +35,12 @@ const Login = () => {
             console.log(error);
         }
     }
-
+    
     return (
         <div id={classes.form} className="flex_container full-page">
-            <span className={classes.text_form}>Authentification</span>
-            <form id="flex_container" className={classes.formR} onSubmit={handleSubmit(onSubmit)}>
+            <span className={classes.ellipse}></span>
+            <span className={classes.text_form}>Вход</span>
+                <form id="flex_container" className={classes.formR} onSubmit={handleSubmit(onSubmit)}>
                 <input
                     type="phone"
                     placeholder="Номер телефона"
@@ -63,11 +67,20 @@ const Login = () => {
                         Поле не заполнено
                     </p>
                 )}
+                <span  type='submit'className={classes.ForgotPassword}>Забыли пароль?</span>
+
                 {/*<p>{errAlert}</p>*/}
+
                 <button type='submit' className={classes.submitButton}>Продолжить</button>
-            </form>
                 <button type='submit' className={classes.asGuest}>Войти как гость</button>
+                <button type='submit' className={classes.Regist}>Регистрация</button>
+                <img src={Google} alt ="Google"className={classes.Google}/>
+            </form>
+            <span  type='submit'className={classes.openWith}>Войти с помощью</span>
+            <img src={Facebook} alt ="Facebook"className={classes.Facebook}/>
+            <img src={Apple} alt ="Apple"className={classes.Apple}/>   
         </div>
+        
     );
 };
 
