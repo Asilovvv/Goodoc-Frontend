@@ -6,6 +6,7 @@ import Apple from "../../images/apple.jpg"
 //import {apiService} from '../../api/api.axios';
 import {useAuth} from '../../context/AuthContext';
 import { useNavigate } from "react-router-dom";
+import Enter from "../../images/enter.jpg";
 const Login = () => {
 
     const {
@@ -38,8 +39,7 @@ const Login = () => {
     
     return (
         <div id={classes.form} className="flex_container full-page">
-            <span className={classes.ellipse}></span>
-            <span className={classes.text_form}>Вход</span>
+            <img src={Enter} alt ="Enter"className={classes.Enter}/>
                 <form id="flex_container" className={classes.formR} onSubmit={handleSubmit(onSubmit)}>
                 <input
                     type="phone"
@@ -70,13 +70,15 @@ const Login = () => {
                 <span  type='submit'className={classes.ForgotPassword}>Забыли пароль?</span>
 
                 {/*<p>{errAlert}</p>*/}
-
+        
+            </form>
+            <form id="flex_container2" className={classes.form2}>
                 <button type='submit' className={classes.submitButton}>Продолжить</button>
                 <button type='submit' className={classes.asGuest}>Войти как гость</button>
                 <button type='submit' className={classes.Regist}>Регистрация</button>
-                <img src={Google} alt ="Google"className={classes.Google}/>
+                <button  type='submit'className={classes.openWith}>Войти с помощью</button>
             </form>
-            <span  type='submit'className={classes.openWith}>Войти с помощью</span>
+            <img src={Google} alt ="Google"className={classes.Google}/>
             <img src={Facebook} alt ="Facebook"className={classes.Facebook}/>
             <img src={Apple} alt ="Apple"className={classes.Apple}/>   
         </div>

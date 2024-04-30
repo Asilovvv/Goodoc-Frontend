@@ -2,7 +2,7 @@ import classes from "../Register/Register.module.css";
 import {useForm} from "react-hook-form";
 //import {apiService} from '../../api/api.axios'
 import { useNavigate } from "react-router-dom";
-import Header from "../../images/header.jpg";
+import Registr from "../../images/registr.jpg";
 const Regist = () => {
 
     const {
@@ -30,10 +30,7 @@ const Regist = () => {
 
     return (
         <div id={classes.form} className="flex_container full-page">
-            <div class="container" className={classes.container}>
-            <img src={Header} alt ="Header"className={classes.Header}/>
-            <span className={classes.text_form}>Регистрация</span>
-            </div>
+            <img src={Registr} alt ="Registr"className={classes.Registr}/>
             <form id="flex_container" className={classes.formR} onSubmit={handleSubmit(onSubmit)}>
                 <input
                     type="phone"
@@ -42,7 +39,7 @@ const Regist = () => {
                     aria-invalid={errors.phone ? 'true' : 'false'}
                     className={errors.phone && classes.errorInput}
                 />
-                {errors.mail?.type === 'required' && (
+                {errors.phone?.type === 'required' && (
                     <p className={classes.error} role="alert">
                         Поле не заполнено
                     </p>
@@ -66,7 +63,7 @@ const Regist = () => {
                     type="password"
                     placeholder="Подтвердите пароль"
                     {...register('passwordConfirmation', {
-                        required: 'Confirm passwords is required',
+                        required: 'Поле не заполнено',
                         validate: value =>
                             value === watch('password') || "The passwords do not match"
                     })}
@@ -78,9 +75,10 @@ const Regist = () => {
                         {errors.passwordConfirmation.message}
                     </p>
                 )}
-                {/*<p>{errAlert}</p>*/}
                 <button type='submit' className={classes.submitButton}>Продолжить</button>
+                {/*<p>{errAlert}</p>*/}
             </form>
+            
         </div>
     );
 };
