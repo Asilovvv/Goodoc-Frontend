@@ -1,11 +1,11 @@
 import classes from "./Login.module.css";
 import {useForm} from "react-hook-form";
-import Google from "../../images/google copy.jpg"
+import Google from "../../images/google.jpg"
 import Facebook from "../../images/facebook.jpg"
-import Apple from "../../images/apple.jpg"
-//import {apiService} from '../../api/api.axios';
+import Apple from "../../images/apple.jpg";
+import {apiService} from '../../api/api.axios';
 import {useAuth} from '../../context/AuthContext';
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Enter from "../../images/enter.jpg";
 const Login = () => {
 
@@ -21,17 +21,17 @@ const Login = () => {
 
     const onSubmit = async(data) => {
         const dataUser = {
-            email: data.mail,
+            number: data.number,
             password: data.password
         }
-        console.log(dataUser)
+        console.log(dataUser) 
         try {
-            const res = await apiService.post('/api/v1/auth/authenticate', dataUser)
+            const res = await apiService.post('/auth/login', dataUser)
             localStorage.setItem('token',res.data.access_token)
             setIsAuth(res.data.access_token)
             console.log(isAuth)
             console.log(res);
-            navigate('/mainPage')
+            navigate('/')
         } catch (error) {
             console.log(error);
         }
@@ -42,21 +42,19 @@ const Login = () => {
             <img src={Enter} alt ="Enter"className={classes.Enter}/>
                 <form id="flex_container" className={classes.formR} onSubmit={handleSubmit(onSubmit)}>
                 <input
-                    type="phone"
+                    type="number"
                     placeholder="Номер телефона"
                     {...register('number', {required: true})}
                     aria-invalid={errors.number ? 'true' : 'false'}
-                    className={errors.mail && classes.errorInput}
+                    className={errors.number && classes.errorInput}
                 />
                 {errors.number?.type === 'required' && (
                     <p className={classes.error} role="alert">
                         Поле не заполнено
                     </p>
                 )}
-
-
                 <input
-                    type="Пароль"
+                    type="password"
                     placeholder="Пароль"
                     {...register('password', {required: true})}
                     aria-invalid={errors.password ? 'true' : 'false'}
@@ -68,19 +66,18 @@ const Login = () => {
                     </p>
                 )}
                 <span  type='submit'className={classes.ForgotPassword}>Забыли пароль?</span>
-
-                {/*<p>{errAlert}</p>*/}
-        
-            </form>
-            <form id="flex_container2" className={classes.form2}>
                 <button type='submit' className={classes.submitButton}>Продолжить</button>
                 <button type='submit' className={classes.asGuest}>Войти как гость</button>
+                <NavLink to={"/register"}>
                 <button type='submit' className={classes.Regist}>Регистрация</button>
+                </NavLink>
                 <button  type='submit'className={classes.openWith}>Войти с помощью</button>
+                <img src={Google} alt ="Google"className={classes.Google}/>
+                <img src={Facebook} alt ="Facebook"className={classes.Facebook}/>
+                <img src={Apple} alt ="Apple"className={classes.Apple}/> 
+                {/*<p>{errAlert}</p>*/}
             </form>
-            <img src={Google} alt ="Google"className={classes.Google}/>
-            <img src={Facebook} alt ="Facebook"className={classes.Facebook}/>
-            <img src={Apple} alt ="Apple"className={classes.Apple}/>   
+              
         </div>
         
     );
