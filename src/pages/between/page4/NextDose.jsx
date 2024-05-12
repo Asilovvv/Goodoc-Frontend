@@ -8,6 +8,7 @@ const NextDose =()=>{
             <span className={classes.text2}>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</span>
             <form id={classes.form2}className="answers_container">
                 <span className={classes.question}>Когда вам нужно принять следующую дозу?</span>
+                
             </form>
         </div>
         
