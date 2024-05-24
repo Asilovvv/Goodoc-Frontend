@@ -1,0 +1,215 @@
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+.square {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.status_bar {
+    display:flex;
+    padding:18px;
+    margin-left:294px;
+    gap:5px;
+}
+
+.calendar {
+    display: flex;
+    font-family:'SF Pro Display';
+    font-weight:500;
+    font-size:25px;
+    justify-content: center;
+    align-items: center;
+    margin:36px 0;
+}
+
+.overall {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    gap:42px;
+    margin-left:24px;
+    margin-top:50px;
+}
+
+.days {
+    border-radius:13px;
+    width:43px;
+    height:73px;
+    background-color: rgb(2, 3, 109);
+    color:white;
+    font-family:'Darker Grostesque';
+    padding:16px 12px;
+}
+
+.dayss {
+    border-radius:13px;
+    border:1px solid black;
+    width:43px;
+    height:73px;
+    background-color:white;
+    font-family:'Darker Grostesque';
+    padding:16px 12px;
+}
+
+.number {
+    font-weight:800;
+    font-size:18px;
+}
+
+.week {
+    font-weight:700;
+    font-size:14px;
+    margin-left:5px;
+}
+
+.first_time {
+    display:flex;
+    align-items:center;
+    font-size:40px;
+    margin:43px 0 0 32px;
+    font-family:'Darker Grosque';
+    font-weight:700;
+}
+
+.pill_info {
+    width:378px;
+    height:112px;
+    background-color: rgb(108, 99, 255);
+    border-radius: 20px;
+    margin:10px 25px;
+}
+
+.image_pill {
+    margin:28px 25px;
+}
+
+.white_line {
+    display: block;
+    background-color: white;
+    width:1px;
+    height:112px;
+    margin:-114px 105px;
+}
+
+.pill_infoo {
+    display:flex;
+    flex-direction:column;
+}
+
+
+.name_pill {
+    font-family: 'SF Pro Display';
+    font-weight:700;
+    font-size:18px;
+    color:white;
+    margin:21px 0 0 120px;
+}
+
+.number_pills {
+    color:rgb(187, 187, 187);
+    font-family:'SF Pro Display';
+    font-weight:400;
+    font-size:12px;
+    margin:5px 0 0 120px;
+    
+}
+
+.infoo {
+    font-family: 'SF Pro Display';
+    font-weight:500;
+    font-size:13px;
+    color:rgb(78, 245, 0);
+    margin:12px 120px;
+    white-space:nowrap;
+}
+
+.second_time {
+    font-size:40px;
+    margin:4px 0 0 32px;
+    font-family:'Darker Grosque';
+    font-weight:700;
+}
+
+.infoo_not {
+    font-family: 'SF Pro Display';
+    font-weight:500;
+    font-size:13px;
+    color:white;
+    margin:12px 120px;
+    white-space:nowrap;
+}
+
+.add_button {
+    background-color: rgb(2, 3, 109);
+    border-radius:16px;
+    margin:98px 0 0 40px ;
+    color:white;
+    padding:16px 98px;
+    font-family:'SFPro Display';
+    font-weight:700;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.add_button:hover {
+    background-color:rgb(78, 245, 0);
+    
+}
+
+.bg {
+    position:relative;
+    display:flex;
+    width:375px;
+    padding:20px 32px;
+    background-color: rgb(108, 99, 255);
+    border-radius:20px;
+    color:white;
+    height:76px;
+    margin:25px 0 0 27px;
+}
+
+.bot {
+    position:absolute;
+    align-items: row;
+    margin-top:10px;
+    background-color: #02036D;
+    width:66px;
+    height:66px;
+    border-radius: 50%;
+    padding:5px 5px;
+    color:white;
+    gap:5px;
+    outline: 4px solid white;
+    transform: translate(50%,-50%);
+    top:10px;
+    left:120px;
+}
+
+
+.calender {
+    margin-left:10px;
+}
+.frame {
+    margin-left:160px;
+}
+
+.profile_title {
+    margin-left:140px;
+}
+
+.black_line {
+    display:flex;
+    background-color: black;
+    height: 6px;
+    width:135px;
+    border-radius:3px;
+    margin:26px 0 0 ;
+    margin-left:147px;
+}
+
+

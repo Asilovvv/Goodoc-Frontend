@@ -74,8 +74,8 @@ function Main() {
                 </div>
                 <div className="but">
                     {/*<Button variant="contained">Продолжить</Button>*/}
-                    <button type='submit' className="submitButton">Продолжить</button>
-                    <Button variant="contained" onClick={() => navigate('/register')}>Пропустить</Button>
+                    <button type='submit' onClick={() => navigate('/register')} className="submitButton">Продолжить</button>
+                    {/*<Button variant="contained" onClick={() => navigate('/register')}>Пропустить</Button>*/}
                 </div>
             </div>
         )

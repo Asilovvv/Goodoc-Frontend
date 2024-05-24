@@ -1,0 +1,101 @@
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+.block {
+    display:flex;
+    gap:22px;
+    padding:98px  24px 0 24px;
+}
+
+.time_info {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.time_title {
+    font-size:22px;
+    font-family:'Lato';
+    font-weight:700;
+    color:rgb(0, 67, 206)
+}
+
+.p_info {
+    font-family:'Lato';
+    font-weight:400;
+    font-size:13.75px;
+    color:rgb(82, 82, 82);
+}
+
+
+
+.blue_container {
+    margin-top:42px;
+    width:100%;
+    background-color: rgb(108, 99, 255);
+    height:85vh;
+    border-radius:20px;
+    padding-top:120px;
+}
+
+.hiden_info {
+    background-color: rgb(241, 244, 255);
+    padding:20px 0 20px 20px;
+    border-radius:10px;
+    opacity:30%;
+}
+
+.word_word {
+    font-weight: bold;
+}
+
+.time_picker {
+    margin:20px 0;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-mobile-picker {
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .react-mobile-picker .picker-item {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .react-mobile-picker .picker-item.highlight {
+    background-color: #f5f5f5;
+  }
+  
+  .react-mobile-picker .picker-indicator {
+    border-color: white;
+  }
+  
+  .selected-time-text {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+.time_picker {
+    height:250px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color:lightgrey;
+    border-radius: 20px;
+    
+}
