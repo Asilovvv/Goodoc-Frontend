@@ -12,12 +12,12 @@ const Router = () => {
     return (<>
 
         <Routes>
-            {!isAuth?
-                <>
-                    <Route path={"/register"} element={<Register />}/>
-                    <Route path={"/login"} element ={<Login/>}/>
-                </>
-                :
+            {/*{!isAuth?*/}
+            {/*    <>*/}
+            {/*        <Route path={"/register"} element={<Register />}/>*/}
+            {/*        <Route path={"/login"} element ={<Login/>}/>*/}
+            {/*    </>*/}
+            {/*    :*/}
                 <>
                     <Route path={"/register"} element={<Register />}/>
                     <Route path={"/login"} element ={<Login/>}/>
@@ -25,7 +25,7 @@ const Router = () => {
                     <Route path={"/page4"} element ={<NextDose/>}/>
               
                 </>
-            }  
+            {/*}  */}
             
         </Routes>
     </>

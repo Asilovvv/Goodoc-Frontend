@@ -30,7 +30,7 @@ const Frequency =()=>{
                 <span className={classes.question}>Как часто вы его принимаете?</span>
             </form>
             {post.map((item,idx) => (
-                <div className="product" key={idx}git remote set-url origin>
+                <div className="product" key={idx}>
                     <p className="answers">{item.answers}</p>
                 </div>
             ))}
