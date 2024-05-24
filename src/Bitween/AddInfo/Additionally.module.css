@@ -1,0 +1,75 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.square {
+    justify-content:center;
+    align-items:center;
+}
+
+.block {
+    display:flex;
+    gap:22px;
+    padding:98px  24px 0 24px;
+}
+
+.time_info {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.time_title {
+    font-size:22px;
+    font-family:'Lato';
+    font-weight:700;
+    color:rgb(0, 67, 206)
+}
+
+.p_info {
+    font-family:'Lato';
+    font-weight:400;
+    font-size:13.75px;
+    color:rgb(82, 82, 82);
+}
+
+.blue_container {
+    margin-top:42px;
+    width:100%;
+    background-color: rgb(108, 99, 255);
+    height:85vh;
+    border-radius:20px;
+}
+
+.title_pill {
+    display: flex;
+    font-size:24px;
+    font-family:'SF Pro Display';
+    font-weight:400p;
+    padding:30px 0 0 24px;
+    color:white;
+}
+
+.buttons {
+    margin:27px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    cursor:pointer;
+    
+}
+
+button {
+    padding:20px 0;
+    color:white;
+    font-size:16px;
+    font-family:'SF Pro Display';
+    font-weight:500;
+    border-radius:10px;
+    border:1px solid white;
+    background-color: rgb(108, 99, 255);
+}
+.buttons :hover {
+    background-color: rgb(59, 54, 141);
+}

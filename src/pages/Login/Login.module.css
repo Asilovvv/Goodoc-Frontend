@@ -1,0 +1,151 @@
+.text_form{
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align:left;
+    margin-left: 20px;
+    margin-top:30px;
+}
+.formR{
+    display: grid;
+    place-items: center;
+    height: 35vh;
+    margin: 15px;
+    margin-top: 200px;
+}
+input{
+    align-items: center;
+    font: Inter;
+    background: var(--Text-Dark-color, #d9e0e9);
+    border: none;
+    color: #f5f5ff;
+    padding: 13px;
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 200px;
+    height: 5px;
+    top:79px;
+    padding: 20px 35px 20px 20px;
+    border-radius: 10px;
+}
+.ForgotPassword{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style:initial;
+    font-weight: 600px;
+    color:#1F41BB;
+    margin-top: 10px;
+    margin-left: 185px;
+}
+.errorInput {
+    border: 1px solid red;
+    color: #bf1650;
+}
+
+.error {
+    color: #bf1650;
+    margin: 0px;
+    margin-left: 60px;
+}
+
+.error::before {
+    display: inline;
+    content: "⚠ ";
+}
+.submitButton{
+    align-items: center;
+    background: #02036D;
+    font: Inter;
+    color: #fcfcfc;
+    width: 20px;
+    height: Fixed (56px)px;
+    top: 491px;
+    left: 43px;
+    padding: 14px  20px 14px 20px;
+    gap: 10px;
+    border-radius: 16px;
+    border: none;
+    margin-top:15px;
+    margin-left: 23px;
+    
+}
+.asGuest{
+    align-items: center;
+    background: #d9e0e9;
+    color:#2C2C2C;
+    font: Inter;
+    width: 270px;
+    height: Fixed (56px)px;
+    top: 491px;
+    left: 43px;
+    padding: 14px  20px 14px 20px;
+    gap: 10px;
+    border-radius: 16px;
+    margin-top:15px;
+    margin-left: 23px;
+    border: none;
+
+}
+.Regist{
+    align-items: center;
+    background: #d9e0e9;
+    font: Inter;
+    color:#2C2C2C;
+    border: none;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    width: 270px;
+    height: Fixed (56px)px;
+    top: 623px;
+    left: 43px;
+    padding: 14px 20px 14px 20px;
+    border-radius: 16px;
+    margin-top: 15px;
+    margin-left: 23px;  
+    
+}
+.openWith{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600px;
+    color:#1F41BB;
+    margin-left: 160px;
+    margin-top: 60px;
+}
+.Google{
+    width: 30px;
+    height: 30px;
+    margin-left: -90px;
+    margin-top: 60px;
+}
+.Facebook{
+    width: 35px;
+    height: 35px;
+    margin-left: 195px;
+    margin-top: 18px;
+}
+.Apple{
+    width: 40px;
+    height: 40px;
+    margin-left: 19px;
+    margin-top: 0px;
+}
+
+
+@media (max-width: 851px) {
+    .formR{
+        width: 90%;
+    }
+
+    .submitButton{
+        width: 80%;
+    }
+    .asGuest{
+        width: 73%;
+    }
+}
