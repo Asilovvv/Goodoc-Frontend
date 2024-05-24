@@ -8,18 +8,27 @@
     text-align:left;
     margin-left: 20px;
     margin-top:30px;
+
+}
+.Enter{
+    width: 466px;
+    height: 180px;
+    margin-top: -20px;
+    margin-left: -10px;
 }
 .formR{
     display: grid;
     place-items: center;
-    height: 35vh;
+    height: 15vh;
     margin: 15px;
-    margin-top: 200px;
+    margin-top: 60px;
+
 }
 input{
     align-items: center;
     font: Inter;
-    background: var(--Text-Dark-color, #d9e0e9);
+    font-size: 16px;
+    background: #d9e0e9;
     border: none;
     color: #f5f5ff;
     padding: 13px;
@@ -36,10 +45,17 @@ input{
     font-family: Poppins;
     font-size: 14px;
     font-style:initial;
-    font-weight: 600px;
+    font-weight: 600;
     color:#1F41BB;
     margin-top: 10px;
     margin-left: 185px;
+    margin-left: 40px;
+    width:300px;
+    height: 15px;
+    top:79px;
+    padding: 20px 35px 20px 20px;
+    border-radius: 10px;
+    margin-top: 25px;
 }
 .errorInput {
     border: 1px solid red;
@@ -48,29 +64,38 @@ input{
 
 .error {
     color: #bf1650;
-    margin: 0px;
-    margin-left: 60px;
+    margin-top: 0px;
+    margin-left:-150px;
 }
 
 .error::before {
     display: inline;
     content: "⚠ ";
 }
+.ForgotPassword{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style:initial;
+    font-weight: 600px;
+    color:#1F41BB;
+    margin-top: 0px;
+    margin-left: 280px;
+}
 .submitButton{
     align-items: center;
     background: #02036D;
-    font: Inter;
     color: #fcfcfc;
-    width: 20px;
-    height: Fixed (56px)px;
-    top: 491px;
+    width: 350px;
+    height: 55px;
+    top: 490px;
     left: 43px;
     padding: 14px  20px 14px 20px;
     gap: 10px;
-    border-radius: 16px;
+    border-radius: 10px;
     border: none;
-    margin-top:15px;
-    margin-left: 23px;
+    margin-top:20px;
+    margin-left: 40px;
     
 }
 .asGuest{
@@ -78,15 +103,17 @@ input{
     background: #d9e0e9;
     color:#2C2C2C;
     font: Inter;
-    width: 270px;
-    height: Fixed (56px)px;
+
+    width: 350px;
+    height: 50px;
     top: 491px;
     left: 43px;
     padding: 14px  20px 14px 20px;
     gap: 10px;
-    border-radius: 16px;
+
+    border-radius: 10px;
     margin-top:15px;
-    margin-left: 23px;
+    margin-left: 40px;
     border: none;
 
 }
@@ -97,15 +124,16 @@ input{
     color:#2C2C2C;
     border: none;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-    width: 270px;
-    height: Fixed (56px)px;
+
+    width: 350px;
+    height: 50px;
     top: 623px;
     left: 43px;
     padding: 14px 20px 14px 20px;
-    border-radius: 16px;
+    border-radius: 10px;
     margin-top: 15px;
-    margin-left: 23px;  
-    
+    margin-left: 40px;  
+
 }
 .openWith{
     text-align: center;
@@ -138,14 +166,15 @@ input{
 
 
 @media (max-width: 851px) {
-    .formR{
+    .formR {
         width: 90%;
     }
 
-    .submitButton{
+    .submitButton {
         width: 80%;
     }
-    .asGuest{
+
+    .asGuest {
         width: 73%;
     }
 }

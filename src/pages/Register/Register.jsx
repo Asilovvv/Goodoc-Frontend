@@ -1,8 +1,9 @@
 import classes from "../Register/Register.module.css";
 import {useForm} from "react-hook-form";
-//import {apiService} from '../../api/api.axios'
-import { useNavigate } from "react-router-dom";
-import Header from "../../images/header.jpg";
+import {apiService} from '../../api/api.axios';
+import { NavLink, useNavigate } from "react-router-dom";
+import Registr from "../../images/registr.jpg";
+
 const Regist = () => {
 
     const {
@@ -16,12 +17,13 @@ const Regist = () => {
 
     const onSubmit = async(data) => {
         const dataUser = {
-            phone:data.phone,
+
+            phone:data.number,
             password: data.password,
         }
         console.log(dataUser)
         try {
-            const res = await apiService.post('/api/v1/auth/register/admin', dataUser)
+            const res = await apiService.post('/auth/register', dataUser)
             navigate('/login')
         } catch (error) {
             console.log(error);
@@ -30,20 +32,17 @@ const Regist = () => {
 
     return (
         <div id={classes.form} className="flex_container full-page">
-            <div class="container" className={classes.container}>
-            <img src={Header} alt ="Header"className={classes.Header}/>
-            <span className={classes.text_form}>Регистрация</span>
-            </div>
+            <img src={Registr} alt ="Registr"className={classes.Registr}/>
             <form id="flex_container" className={classes.formR} onSubmit={handleSubmit(onSubmit)}>
                 <input
-                    type="phone"
+                    type="number"
                     placeholder="Номер телефона"
-                    {...register('phone', {required: true})}
-                    aria-invalid={errors.phone ? 'true' : 'false'}
-                    className={errors.phone && classes.errorInput}
+                    {...register('number', {required: true})}
+                    aria-invalid={errors.number? 'true' : 'false'}
+                    className={errors.number && classes.errorInput}
                 />
-                {errors.mail?.type === 'required' && (
-                    <p className={classes.error} role="alert">
+                {errors.number?.type === 'required' && (
+ <p className={classes.error} role="alert">
                         Поле не заполнено
                     </p>
                 )}
@@ -66,9 +65,9 @@ const Regist = () => {
                     type="password"
                     placeholder="Подтвердите пароль"
                     {...register('passwordConfirmation', {
-                        required: 'Confirm passwords is required',
+                        required:'Поле не заполнено',
                         validate: value =>
-                            value === watch('password') || "The passwords do not match"
+                            value === watch('password') || "Пароль не соответствует"
                     })}
                     aria-invalid={errors.passwordConfirmation ? 'true' : 'false'}
                     className={errors.passwordConfirmation && classes.errorInput}
@@ -78,8 +77,8 @@ const Regist = () => {
                         {errors.passwordConfirmation.message}
                     </p>
                 )}
-                {/*<p>{errAlert}</p>*/}
                 <button type='submit' className={classes.submitButton}>Продолжить</button>
+                {/*<p>{errAlert}</p>*/}
             </form>
         </div>
     );

@@ -1,34 +1,36 @@
-import React from 'react';
-import Add from '../Bitween/AddInfo/Additionally.jsx';
-import Time from '../Bitween/Time/Time.jsx';
-import Calendar from '../MainPage/Calendar/Calendar.jsx';
-import Chat from '../MainPage/Chat/Chat.jsx';
-import { Route, Routes} from "react-router-dom";
-// import { useAuth } from "../context/AuthContext.jsx";
 
+import {Route, Routes} from "react-router-dom";
+import Register from "../pages/Register/Register.jsx";
+import Login from "../pages/Login/Login.jsx";
+import { useAuth } from "../context/AuthContext.jsx";
+import Frequency from "../pages/between/page3/Frequency.jsx"
+import NextDose from "../pages/between/page4/NextDose.jsx";
 
 const Router = () => {
-   
-    return (
-        <>
-  
-        <Routes>
-            <>
-                <Route path={"/add"} element={<Add />}/>
-                <Route path={"/time"} element={<Time />}/>
-            </>
-            <>
-                <Route path={"/calendar"} element={<Calendar />}/>
-                <Route path={"/chat"} element={<Chat />}/> 
-            </>
-           
-        
-        </Routes>
-       
+    // eslint-disable-next-line no-unused-vars
+    const {isAuth, setIsAuth} = useAuth()
+    console.log(isAuth)
+
+    return (<>
+
+            <Routes>
+                {/*{!isAuth?*/}
+                {/*    <>*/}
+                {/*        <Route path={"/register"} element={<Register />}/>*/}
+                {/*        <Route path={"/login"} element ={<Login/>}/>*/}
+                {/*    </>*/}
+                {/*    :*/}
+                <>
+                    <Route path={"/register"} element={<Register/>}/>
+                    <Route path={"/login"} element={<Login/>}/>
+                    <Route path={"/page3"} element={<Frequency/>}/>
+                    <Route path={"/page4"} element={<NextDose/>}/>
+
+                </>
+                {/*}  */}
+
+            </Routes>
         </>
-
-
     );
 }
-
 export default Router;

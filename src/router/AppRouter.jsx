@@ -1,10 +1,12 @@
 import {Route, Routes} from "react-router-dom";
 import Main from "../pages/Main.jsx";
-import Register from "../pages/Register.jsx";
+
 import Between from "../pages/Between.jsx";
-import Login from "../pages/Login.jsx";
+
 import Chat from "../MainPage/Chat/Chat.jsx";
-import React from "react";
+import Login from "../pages/Login/Login.jsx";
+import Register from "../pages/Register/Register.jsx";
+
 
 
 
@@ -13,8 +15,8 @@ function AppRouter () {
         <Routes>
 
           <Route path="/" element={<Main />} />
-          <Route path="/register" element={<Register/>} />
-          <Route path="/login" element={<Login/>} />
+           <Route path={"/register"} element={<Register/>}/>
+          <Route path={"/login"} element={<Login/>}/>
           <Route path="/between" element={<Between />} />
             <Route path={"/chat"} element={<Chat />}/>
         </Routes>
