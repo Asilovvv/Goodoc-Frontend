@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+    width: 320px;
+    height: 300px;
+    margin-left: 500px;
+    margin-top: 40px;
+
+
+}
+
+h3 {
+    font-family: CerebriSans-Bold, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+h5 {
+    font-family: CerebriSans-Bold, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+@media screen and (min-width: 1024px) {
+    h3 {
+        font-size: 2.5em;
+    }
+}
+.parent {
+    font-family: CerebriSans-Bold, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 1.9em;
+    font-weight: 400;
+    margin-bottom: 40%;
+    text-align: center;
+    margin-top: 50px;
+}
+.
+@media screen and (min-width: 1024px) {
+    parent {
+        font-size: 2.5em;
+    }
+}
+.button {
+    font-family: CerebriSans-Bold, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 1.9em;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    button {
+        font-size: 2.5em;
+    }
+}
+.parent {
+    font-family: CerebriSans-Bold, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 1.9em;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    parent {
+        font-size: 2.5em;
+    }
+}
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+.headerLogo{
+}
+.headerTitle{
+}
+.titleText{
+    color: #6C63FF;
+    font-size: 20px;
+
+}
+.descrText{
+
+}
+.contentTitle{
+    position: fixed;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+    padding: 40px 40px ;
+    color: white;
+    margin-left: -10px;
+    font-size: 20px;
+
+}
+
+.content{
+    background-color: #6C63FF;
+    border-radius: 20px 20px 0 0 ;
+    position: fixed;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+    padding: 40px 20px ;
+
+}
+.contentInput{
+    border: none;
+    outline: none;
+    padding: 20px;
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+.contentButton{
+    position: fixed;
+    bottom: 20px;
+    width: 90%;
+    margin-top: 10px;
+}
+.contentButton1{
+    background-color: #6C63FF;
+    border-color: #FFFFFF;
+    width:370px;
+    height: 60px;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 15px;
+    border-radius: 14px;
+    border-width: 1.5px
+}
+.btn1{
+    font-size: 18px;
+    padding: 20px;
+    background: #02036D50;
+    color: white;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    border-radius: 10px ;
+
+}
+.btn{
+    background-color: #6C63FF;
+    border-color: #FFFFFF;
+    width:370px;
+    height: 60px;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 14px;
+    border-width: 1.5px
+}
+.bth:hover{
+    background: #02036D;
+}
+.form{
+    padding-top: 1px;
+}
+.Page3{
+    width: 120px;
+    height: 120px;
+    margin-top: 90px;
+    margin-left: 30px;
+
+}
+.text{
+    font-size: 25px;
+    color: #02036D;
+    margin-left: 50px;
+    position: absolute;
+    top: 120px;
+    left: 130px;
+}
+.text2{
+    font-size: 15px;
+    color: #000000;
+    margin-left: 50px;
+    position: absolute;
+    top: 155px;
+    left: 134px;
+}
+#form2{
+    align-items: center;
+    width: 380px;
+    height: 720px;
+    background: #6C63FF;
+    top: 30px;
+    padding: 20px 35px 20px 20px;
+    margin-top: 60px;
+    margin-left: -10px;
+    border-radius: 20px;
+}
+.question{
+    color:#FFFFFF;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.answers{
+    background-color: #6C63FF;
+    border-color: #FFFFFF;
+    width:370px;
+    height: 60px;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 15px;
+    border-radius: 14px;
+    border-width: 1.5px;
+}
+
+.submitButton{
+    align-items: center;
+    background: #02036D;color: #fcfcfc;
+    width: 350px;height: 55px;
+    top: 490px;left: 43px;
+    padding: 14px  20px 14px 20px;gap: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.skipButton{
+    background: #02036D;
+
+}
+
